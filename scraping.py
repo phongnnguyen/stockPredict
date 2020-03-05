@@ -35,7 +35,6 @@ class ScrapingWeb():
             price.append(priceStock)
             volumn.append(volStock)
     def notiSlack(self,messg):
-        # slack_token = 'xoxb-892658657187-891349517858-tM9y2dwtS0D3VyFWtvW1zkZq'
         slackToken = self.tokenSlack
         ssl_context = ssl.create_default_context(cafile=certifi.where())
         client = scraping.WebClient(slackToken, ssl=ssl_context)
